@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html, body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    margin: 70px 15px;
+}
+
+main>:first-child>:first-child h2 {
+    margin: 20px;
+    font-size: 2rem;
+    color: var(--very-dark-magenta);
+    text-align: center;
+}
+
+main>:first-child>:first-child p {
+    color: var(--dark-grayish-magenta);
+    line-height: 1.5;
+    text-align: center;
+    margin: 25px 0 35px;
+}
+
+/* container of rates */
+main>:first-child>:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate {
+    background: var(--light-grayish-magenta);
+    margin: 10px 0; 
+    padding: 15px 0;  
+    border-radius: 10px;  
+}  
+
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.stars li {
+    margin: 0 5px;
+}
+
+.rate h5 {
+    color: var(--very-dark-magenta);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* selecting second child div of main */
+main>:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--very-dark-magenta);
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 40px 33px;
+}
+
+.buyer {
+    display: flex;    
+    align-items: center;
+}
+
+
+.buyer-icon {
+    height: 40px;
+    width: 40px;
+    /* selector has a higher priority than class */
+    background-size: cover !important; 
+    border-radius: 50%;
+}
+
+/* selecting first .buyer-icon */
+main>:nth-child(2)>:first-child .buyer-icon {
+    background: url('images/image-colton.jpg');
+}
+
+main>:nth-child(2)>:nth-child(2) .buyer-icon {
+    background: url('images/image-irene.jpg');
+}
+
+main>:nth-child(2)>:nth-child(3) .buyer-icon {
+    background: url('images/image-anne.jpg');
+}
+
+.buyer-info {
+    margin-left: 20px;    
+}
+
+.buyer-info>:first-child {
+    color: var(--white);
+    margin-bottom: 3px;
+}
+
+.buyer-info>:nth-child(2) {
+    color: var(--soft-pink);
+}
+
+.card>:nth-child(2) {
+    margin: 30px 0 0;
+    line-height: 1.6;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 780px) { 
+    main {
+        max-width: 1150px;
+        margin: 100px auto 50px;
+    }
+
+    main>:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    main>:first-child>:first-child {
+        width: 450px;
+    } 
+
+    main>:first-child>:first-child h2 {
+        font-size: 2.7rem;
+        text-align: left;
+        margin: 0 40px 0 0;
+    }
+
+    main>:first-child>:first-child p {
+        text-align: left;
+        margin: 10px 0 35px;
+    }
+
+    main>:first-child>:nth-child(2) {
+        width: 550px;
+    }
+
+    .rate {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 70px 15px 20px; 
+    }  
+
+    .rate h5 {
+        margin-top:0;
+        margin-left: 15px; 
+    }
+
+    .rate:first-of-type {
+        align-self: flex-start;
+    }
+   
+    .rate:nth-child(2) {
+        align-self: center;
+    }
+
+    .rate:last-child {
+        align-self: flex-end;
+    }
+
+    main>:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        height: 330px;
+    }
+
+    main>:nth-child(2)>:first-child {
+        align-self: start;
+        margin-right: 20px;
+    }
+
+    main>:nth-child(2)>:nth-child(2) {
+        align-self: center;
+        margin-right: 20px;
+    }
+
+    main>:nth-child(2)>:nth-child(3) {
+        align-self: flex-end;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
