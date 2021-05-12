@@ -22,11 +22,12 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/summermmg/Social-proof-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Demo](https://summermmg.github.io/Social-proof-section/)
 
 
 ### Screenshot
-
+<div align="center"><img src="./images/screenshot/Screenshot_phone.png" /></div>
+<div align="center"><img src="./images/screenshot/Screenshot_desktop.png" /></div>
 
 
 
